@@ -41,10 +41,11 @@
 		}
     
 		function view(){ 
-
+      $this->set('csscontent', $this->csscontent);            
 		}
 		
 		function save($data) { 
+			$args['csscontent'] = isset($data['csscontent']) ? $data['csscontent'] : '';      
 			parent::save($args);
 		}
 		
