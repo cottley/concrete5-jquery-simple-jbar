@@ -1,9 +1,11 @@
 .notification
 {
-	background-color: #4F6E18;
+  color: #1E90FF;
+	background-color: #FFFFFF;
 }
 
 .notification.warning
 {
-	background-color: #DF8C19;
+  color: #FF6600;
+	background-color: #FFFFCC;
 }
