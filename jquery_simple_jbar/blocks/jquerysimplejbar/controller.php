@@ -30,13 +30,13 @@
       $bv->setBlockObject($this->getBlockObject());
       $blockURL = $bv->getBlockURL();
       $html = Loader::helper('html');
-      $pg = Page::getCurrentPage();
-      if (!$pg->isEditMode()) {
+//      if (!$pg->isEditMode()) {
         $this->addHeaderItem($html->css("{$blockURL}/JBar/jbar.css"));
         $this->addHeaderItem($html->css("{$blockURL}/JBar/jbar.colors.css"));
         $this->addHeaderItem($html->javascript("{$blockURL}/JBar/jquery.bar.custom.js"));
         $this->addHeaderItem($html->javascript("{$blockURL}/JBar/helpers.js"));
-      }
+//      }
+      $pg = Page::getCurrentPage();
       $this->set('isEditMode', $pg->isEditMode());
 		}
     
